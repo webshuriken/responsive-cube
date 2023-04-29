@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A responsive cube that will fit on all screen sizes.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/webshuriken/responsive-cube/issues"
   },
-  "homepage": "https://github.com/webshuriken/responsive-cube#readme"
+  "homepage": "https://github.com/webshuriken/responsive-cube#readme",
+  "devDependencies": {
+    "reload": "^3.2.1",
+    "sass": "^1.62.1"
+  }
 }
