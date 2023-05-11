@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-orange: 255, 190, 134;
+  --theme-yellow: 255, 225, 86;
+  --theme-cream: 255, 233, 206;
+  --theme-pink: 255, 181, 194;
+  --theme-blue: 55, 119, 255;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: scroll;
+}
+
+/* CUBE showcase */
+.showcase {
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+
+.cube-size {}
+.slider-label span {}
+.slider-label__size {}
+.slider-label__rotate {}

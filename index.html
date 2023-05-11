@@ -6,15 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Carlos E Alford M">
   <meta name="description" content="a responsice cube that will resize it self to fit">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="the-cube.css">
   <title>Responsive cube</title>
 </head>
-<body>
-  <header>
+<body class="container">
+  <nav>
     <h1>Responsive Cube</h1>
-  </header>
+  </nav>
   <main>
     <div class="instructions">
-      <p>Resize the cube container to see it the cube in action</p>
+      <label for="cube-size" class="slider-label slider-label__size">
+        <span>Change size of cube: <output id="sliderLabelSizeOutput">100</output>px</span>
+        <input type="range" name="cube-size" id="cubeSize" min="1" max="12" value="1" step="1">
+      </label>
+      <label for="cube-rotate" class="slider-label slider-label__rotate">
+        <span>Rotate the cube face to: <output id="sliderLabelRotateOutput">1</output></span>
+        <input type="range" name="cube-rotate" id="cubeRotate" min="1" max="5" value="1" step="1">
+      </label>
     </div>
     <div class="showcase">
       <!-- RESPONSIVE CUBE-->
@@ -22,32 +31,33 @@
         <div class="r-cube">
           <!-- face FRONT -->
           <div class="r-cube__face r-cube__face--front">
-            <div class="r-cube__face-container"></div>
+            <div class="r-cube__face-container">front</div>
           </div>
           <!-- face RIGHT -->
           <div class="r-cube__face r-cube__face--right">
-            <div class="r-cube__face-container"></div>
+            <div class="r-cube__face-container">right</div>
           </div>
           <!-- face BACK -->
           <div class="r-cube__face r-cube__face--back">
-            <div class="r-cube__face-container"></div>
+            <div class="r-cube__face-container">back</div>
           </div>
           <!-- face LEFT -->
           <div class="r-cube__face r-cube__face--left">
-            <div class="r-cube__face-container"></div>
+            <div class="r-cube__face-container">left</div>
           </div>
           <!-- face TOP -->
           <div class="r-cube__face r-cube__face--top">
-            <div class="r-cube__face-container"></div>
+            <div class="r-cube__face-container">up</div>
           </div>
           <!-- face BOTTOM -->
           <div class="r-cube__face r-cube__face--bottom">
-            <div class="r-cube__face-container"></div>
+            <div class="r-cube__face-container">down</div>
           </div>
         </div>
       </div><!-- END RESPONSIVE CUBE -->
     </div>
   </main>
   <footer>Made by Carlos E Alford 2023</footer>
+  <script src="main.js" type="module"></script>
 </body>
 </html>
